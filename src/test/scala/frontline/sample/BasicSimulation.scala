@@ -17,11 +17,11 @@ class BasicSimulation extends Simulation {
 
   val scn = scenario("scenario1")
     .exec(
-      http("Page 0")
+      http("computer page 0")
         .get("/computers?p=0")
     )
     .exec(
-      http("Page 1")
+      http("computer page 1")
         .get("/computers?p=1")
     )
 
